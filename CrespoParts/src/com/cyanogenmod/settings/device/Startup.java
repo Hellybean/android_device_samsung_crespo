@@ -12,6 +12,7 @@ public class Startup extends BroadcastReceiver {
         ColorTuningPreference.restore(context);
         bldTuningPreference.restore(context);
         GammaTuningPreference.restore(context);
+        VibrationPreference.restore(context);
         if (Hspa.isSupported()) {
             Hspa.restore(context);
         }
