@@ -50,6 +50,7 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
     private CheckBoxPreference mNotification;
     private PreferenceScreen mIdleStats;
     private bldTuningPreference mbldTuning;
+    private VibrationPreference mVibration;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,6 +80,9 @@ public class GeneralFragmentActivity extends PreferenceFragment implements OnPre
         mbldTuning = (bldTuningPreference) findPreference(DeviceSettings.KEY_BLD_TUNING);
         if(mbldTuning != null)
             mbldTuning.setEnabled(bldTuningPreference.isSupported());
+
+        mVibration = (VibrationPreference) findPreference(DeviceSettings.KEY_VIBRATION);
+        mVibration.setEnabled(VibrationPreference.isSupported());
 
     }
 
