@@ -35,7 +35,8 @@
 # and is used by people who have access to binary versions of the drivers
 # but not to the original vendor tree. Be sure to update both.
 
-
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
+TOOLCHAIN_GNUEABIHF := true
 
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
