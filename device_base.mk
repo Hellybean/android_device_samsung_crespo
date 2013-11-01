@@ -38,6 +38,8 @@
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
 TOOLCHAIN_GNUEABIHF := true
 
+FULL_LINARO := true
+
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
