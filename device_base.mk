@@ -43,6 +43,9 @@ FULL_LINARO := true
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
+
+TARGET_KERNEL_CUSTOM_TOOLCHAIN_LINARO := linaro
+
 DEVICE_PACKAGE_OVERLAYS += device/samsung/crespo/overlay
 
 # These are the hardware-specific configuration files
